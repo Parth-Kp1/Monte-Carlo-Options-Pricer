@@ -81,7 +81,7 @@ $$
 
 Because the payoff relies on the entire historical path, knowing just $S_T$ isn't enough. You need to record the asset price at discrete observation times $t_1, t_2, \dots, t_N$.
 
-To generate a valid trajectory, you discretize the total time $T$ into $N$ equal steps of size $\Delta t = \frac{T}{N}$:
+To generate a valid trajectory, you discretize the total time $T$ into $N$ equal steps of size dt = \frac{T}{N}$ (where I designed dt to represent each consecutive trading day):
 
 $$
 S_{t_i} = S_{t_{i-1}} \exp\left( \left(r - \frac{\sigma^2}{2}\right)\Delta t + \sigma \sqrt{\Delta t} Z_i \right)
